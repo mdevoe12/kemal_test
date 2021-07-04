@@ -22,5 +22,6 @@ get "/authors" do |env|
   OpenLibrary::ResponseMappings::Base.from_json(results).docs.to_json
 end
 
-Kemal.config.port = 3000
+port = ENV["PORT"] ||= "3000"
+Kemal.config.port = port.to_i
 Kemal.run
