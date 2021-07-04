@@ -24,4 +24,5 @@ end
 
 port = ENV["PORT"] ||= "3000"
 Kemal.config.port = port.to_i
+Kemal.config.env = "production"
 Kemal.run
