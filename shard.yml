@@ -1,0 +1,17 @@
+name: kemal_test
+version: 0.1.0
+
+authors:
+  - Matt DeVoe <matthew.devoe@hotelengine.com>
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+targets:
+  kemal_test:
+    main: src/kemal_test.cr
+
+crystal: 1.0.0
+
+license: MIT
